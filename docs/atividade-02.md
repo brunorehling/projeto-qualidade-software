@@ -126,48 +126,45 @@ A startup decidiu contratar novos profissionais. Crie anúncios de vagas.
 > A startup busca um profissional da área de QA, você fará parte da equipe responsavel por garantir a qualidade do aplicativo LocalEats, participando ativamente do desenvolvimento de testes e assegurando a qualidade do desenvolvimento.
 
 ### Responsabilidades
-- Definir e implementar a estratégia de testes para a plataforma web e mobile
-- Planejar e executar testes exploratórios e de regressão antes de cada release.
+- Definir e implementar a estratégia de testes para a plataforma
+- Planejar e executar testes exploratórios e de regressão.
 - Colaborar na definição de critérios de aceite e na revisão de código.
 
 ### Requisitos obrigatórios
 - Experiência com automação de testes em aplicações web e/ou mobile.
-- Familiaridade com ferramentas de CI/CD
 - Experiência com testes de API REST
 - Capacidade de trabalhar em equipe ágil
 
 ### Requisitos desejáveis
-- 
-- 
-- 
+- Ter cursado Ciência da Computação, ADS ou outra cadeira de programação.
 
 ### Certificações desejáveis
-- 
+- Diploma de Cienia da Computação, ADS ou outra cadeira de programação.
+- Quality Engineer Certification CQE (ASQ)
 
 ---
 
-## 4.2 Vaga 2 – [Título da vaga]
+## 4.2 Vaga 2 – Desenvolvedor Full-Stack
 
 ### Descrição da vaga
-> 
+> A startup busca um profissional de desenvolvimento Full-Stack, você fará parte da equipe responsável por criar e ajustar o código aplicativo LocalEats, participando ativamente do desenvolvimento de novas funcionalidades e também ajudando na manutenção do código.
+
 
 ### Responsabilidades
-- 
-- 
-- 
+- Ajudar no desenvolvimento da aplicação
+- Ajudar na manutenção do código existente
+- Ajudar a testar as novas funcionalidades
 
 ### Requisitos obrigatórios
-- 
-- 
-- 
+- Experiencia no desenvolvimento de aplicações web e mobile.
+- Experiencia com o desenvolvimento de APIs REST.
+- Capacidade de trabalhar em equipe ágil
 
 ### Requisitos desejáveis
-- 
-- 
-- 
+- Formação em ADS, Ciência da Computação ou outra cadeira de programação.
 
 ### Certificações desejáveis
-- 
+- Diploma de Cienia da Computação, ADS ou outra cadeira de programação.
 
 ---
 
@@ -179,8 +176,9 @@ Descreva brevemente:
 - Principais dificuldades encontradas
 - Principais melhorias propostas para a startup
 
-> Resposta:
-
+> Resposta: Foi reforçado a importancia dos diversos testes, até então eu vinha fazendo apenas testes unitários e testes no final do desenvolvimento, o que, as vezes mostrava algum bug ou funcionalidade que funcionava de forma errada, a falta de testes apropriados acabavam comprometendo o desenvolvimento e dificultando as entregas.
+> A principal dificuldade encontrada ao realizar a arividade foi a crição dos anuncios de contartação, pois não tenho proximidade com a área de QA, o que tornava difícil colocar os requisitos para a vaga.
+> Contratar um profissional especializado na área de QA, para cordenar os testes, e um novo desenvolvedor, para aliviar o ambiente de desenvolvimento, assim deixando a parte de testes mais facil.
 ---
 
 # 📌 Observações (opcional)
