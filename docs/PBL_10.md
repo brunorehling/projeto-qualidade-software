@@ -43,6 +43,7 @@ Porém ainda faltam pontos importantes para chegar a um nível Definido, visto q
 | Ausência de métricas de qualidade | Dificulta acompanhar evolução do projeto |
 | Rastreabilidade parcial | Impacta o controle de mudanças |
 | Revisão de código informal | Pode aumentar a ocorrência de defeitos |
+| retrospectivas ou reuniões de melhoria | Dificulta identificar problemas recorrentes e aprender com erros de tarefas anteriores |
 
 ---
 
@@ -53,6 +54,7 @@ Porém ainda faltam pontos importantes para chegar a um nível Definido, visto q
 | Definir métricas básicas de qualidade | Melhor acompanhamento do projeto |
 | Padronizar revisões de código | Redução de defeitos |
 | Melhorar a rastreabilidade entre requisitos e funcionalidades | Maior controle das mudanças |
+| Fazer retrospectivas periódicas ao final de cada tarefa ou ciclo de desenvolvimento | Identificar pontos de melhoria mais cedo e evitar repetir os mesmos erros|
 
 ---
 
