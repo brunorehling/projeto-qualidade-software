@@ -19,15 +19,20 @@ LocalEats_ci_laboratorio/
 ├── tests/
 │   ├── test_delivery.py
 │   ├── test_delivery_bdd.py
+│   ├── test_apply_discount.py
+│   ├── test_apply_discount_bdd.py
 │   ├── conftest.py
 │   ├── features/
-│   │   └── calc_delivery.feature
+│   │   ├── calc_delivery.feature
+│   │   └── calc_discount.feature
 │   └── steps/
-│       └── test_delivery_steps.py
+│       ├── test_delivery_steps.py
+│       └── test_discount_steps.py
 ├── .github/
 │   └── workflows/
 │       └── quality.yml
 ├── delivery.py
+├── apply_discount.py
 ├── pytest.ini
 └── requirements.txt
 ```
@@ -50,11 +55,40 @@ LocalEats_ci_laboratorio/
 | Tipo de teste | Unitário |
 | Objetivo do teste | Verificar o cálculo correto do valor total do pedido com o valor da entrega junto |
 | Link para o arquivo do teste | https://github.com/brunorehling/LocalEats_ci_laboratorio/blob/main/tests/test_delivery.py
+
+## código relevante para o PBL 12
 ```python
 from delivery import calculate_delivery
 
 def test_calculate_delivery():
     assert calculate_delivery([10.0, 20.0, 30.0], 15.0) == 67.5
+```
+
+## código final após concluir os items da apostila disponobilizada na aula 17
+```python
+import pytest
+from delivery import calculate_delivery
+
+
+def test_calculate_delivery():
+    assert calculate_delivery([10.0, 20.0, 30.0], 15.0) == 67.5
+
+
+def test_calculate_delivery_lista_vazia():
+    assert calculate_delivery([], 10) == 0
+
+
+@pytest.mark.xfail(reason="Bug conhecido: aceita valores negativos silenciosamente (ver Issue #X)")
+def test_calculate_delivery_valores_negativos():
+    resultado = calculate_delivery([-10, 20, 30], 15)
+    assert resultado == 47.5
+
+
+@pytest.mark.xfail(raises=TypeError,
+                   reason="Bug conhecido: nao valida tipo dos itens (ver Issue #X)")
+def test_calculate_delivery_com_string():
+    calculate_delivery(['abc', 20, 30], 15)
+
 ```
 
 ---
@@ -93,6 +127,17 @@ jobs:
  
       - name: Executar testes
         run: pytest
+
+      - name: Instalar dependencias (com extras)
+        run: |
+          pip install pytest pytest-bdd flake8 pytest-cov
+ 
+      - name: Verificar estilo do codigo
+        run: flake8 . --max-line-length=100 --exclude=.venv,.git
+ 
+      - name: Executar testes com cobertura
+        run: pytest --cov=. --cov-fail-under=80
+        # Falha se a cobertura for menor que 80%
 ```
 
 ---
